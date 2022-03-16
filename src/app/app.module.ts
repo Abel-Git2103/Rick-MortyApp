@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BarranavComponent } from './barranav/barranav.component';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TarjetadetailsComponent } from './tarjetadetails/tarjetadetails.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
     HomeComponent,
     AboutComponent,
     BarranavComponent,
-    TarjetaComponent
+    TarjetaComponent,
+    TarjetadetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

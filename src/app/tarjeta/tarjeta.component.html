@@ -3,7 +3,7 @@
     <img class="card-img-top" src="{{ character.image }}" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{ character.name }}</h5>
-      <a class="btn btn-primary boton">See more</a>
+      <a [routerLink] ="['/tarjetadetails', character.id]" class="btn btn-primary boton">See more</a>
     </div>
   </div>
 </div>

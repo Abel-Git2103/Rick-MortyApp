@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .boton {
   background-color: rgb(255, 193, 77);
