@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BarranavComponent } from './barranav/barranav.component';
-import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TarjetadetailsComponent } from './tarjetadetails/tarjetadetails.component';
+import { AddComponent } from './add/add.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { TarjetadetailsComponent } from './tarjetadetails/tarjetadetails.compone
     AboutComponent,
     BarranavComponent,
     TarjetaComponent,
-    TarjetadetailsComponent
+    TarjetadetailsComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

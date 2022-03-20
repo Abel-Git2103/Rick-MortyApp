@@ -1,5 +1,5 @@
 div {
-  display: flex;
+  display: grid;
   justify-content: center;
-  height: 600px;
+  width: 50px;
 }

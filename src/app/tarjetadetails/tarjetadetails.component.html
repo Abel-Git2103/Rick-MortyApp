@@ -11,11 +11,16 @@
             Status: {{characters.status}}<br>
             Species: {{characters.species}}<br>
             Gender: {{characters.gender}}<br>
-            Origin: {{characters.origin.name}}<br>
-            Location: {{characters.location.name}}<br>
+            Origin: {{characters.origin}}<br>
+            Location: {{characters.location}}<br>
             Id Code: {{characters.id}}
           </p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <button class="btn btn-warning mr-2" (click)="deleteCharacter()">Delete</button>
+          <button class="btn btn-light mr-2" *ngIf="characters.status == 'Alive'"
+            (click)="updateStatus('Dead')">Dead</button>
+          <button class="btn btn-light mr-2" *ngIf="characters.status == 'Dead'"
+            (click)="updateStatus('Alive')">Alive</button>
         </div>
       </div>
     </div>
